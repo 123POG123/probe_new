@@ -1,0 +1,28 @@
+.world {
+  background: #eef1ec;
+
+  .container {
+    align-items: center;
+    display: flex;
+    padding: 60px 10px 60px 200px;
+
+    .world_description {
+      padding-right: 35px;
+
+      h2 {
+        @include h2_title
+      }
+
+      p {
+        padding-top: 25px;
+
+        @include p_p
+      }
+    }
+
+    .world_img {
+      padding-left: 35px;
+
+    }
+  }
+}

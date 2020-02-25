@@ -1,0 +1,38 @@
+.description_women {
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 150px 200px 150px 200px;
+
+    .women_title {
+      p {
+        &:first-child {
+          font-family: $Merriweather;
+          font-weight: 400;
+          font-size: 25px;
+          color: #83a7a5;
+          line-height: 40px;
+          padding-bottom: 20px;
+        }
+
+        &:nth-child(2) {
+          color: #1a7629;
+          font-size: 20px;
+          font-weight: 800;
+        }
+        &:nth-child(3) {
+          font-family: $Merriweather;
+          font-weight: 400;
+          color: #83a7a5;
+          padding-top: 10px;
+        }
+      }
+    }
+
+    .women_img {
+      img {
+        padding-left: 160px;
+      }
+    }
+  }
+}

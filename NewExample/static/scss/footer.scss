@@ -1,0 +1,145 @@
+.footer {
+  .container {
+    background: #ffffff;
+
+    padding: 100px 200px 10px 200px;
+
+    .top_section {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        li {
+          width: 175px;
+          @include p_p;
+          line-height: 30px;
+          font-size: 13px;
+
+          &:hover a {
+            background: #eef1ec;;
+          }
+
+          a {
+
+            @include p_p;
+            line-height: 30px;
+            font-size: 13px;
+            text-decoration: none;
+            padding: 5px;
+            text-align: left;
+
+          }
+
+          &:first-child {
+            color: $sin_color;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .wapic {
+        ul {
+          li {
+            &:first-child {
+              text-transform: uppercase;
+              font-family: $Roboto;
+              font-weight: 700;
+              color: $sin_color;
+              font-size: 25px;
+              padding-bottom: 10px;
+
+            }
+
+          }
+        }
+      }
+
+      .hewsletter {
+        form {
+          background: #eef1ec;
+          align-items: center;
+          margin-top: 10px;
+          width: 240px;
+          height: 35px;
+          justify-content: space-around;
+          display: flex;
+
+          input {
+            background: #eef1ec;
+            border: none;
+            display: block;
+
+          }
+
+          button {
+            border: none;
+            display: block;
+            background: #eef1ec;
+            color: #6fb048;
+
+          }
+
+        }
+      }
+
+    }
+
+    .lower_section {
+      hr {
+        width: 100%;
+        margin: 50px 0 10px 0;
+        background-color: #eef1ec;
+        border: none;
+        height: 1px;
+      }
+
+      .lower_section_last {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .lower_section_left {
+          p {
+            @include p_p;
+            font-size: 13px;
+          }
+        }
+
+        .lower_section_right {
+          align-content: center;
+          position: relative;
+
+          a {
+            outline: none;
+          }
+
+          i {
+            padding: 10px;
+            color: #ffffff;
+            border-radius: 100%;
+          }
+
+          .fa-twitter {
+            background: #55acee;
+          }
+
+          .fa-facebook-f {
+            background: #3b5998;
+            padding-right: 12px;
+            padding-left: 12px;
+          }
+
+          .fa-instagram {
+            background: #3f729b;
+          }
+
+          .fa-github-alt {
+            background: black !important;
+          }
+        }
+      }
+    }
+  }
+}
+

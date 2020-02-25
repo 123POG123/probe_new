@@ -1,0 +1,118 @@
+@import '../mixins.scss';
+@import '../variables';
+
+.header {
+  .container {
+    .top {
+      .top_bar {
+        .top_section_second {
+          .navigation {
+            li{
+              a{
+                color: #bfcdcd!important;
+              }
+            }
+            li:nth-child(2) {
+              a {
+                  color: #ffffff !important;
+              }
+            }
+          }
+        }
+      }
+
+      .header_description {
+        text-align: center;
+        padding: 300px 300px 0 300px;
+
+        h1 {
+          font-size: 45px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.description {
+  .container {
+    .description_title {
+      .ope_n {
+        display: none;
+      }
+
+      .closer {
+        display: block;
+      }
+    }
+
+    .line_description {
+      display: none;
+    }
+  }
+}
+
+.section_team {
+  background: #eef1ec;
+  height: 700px;
+  padding: 0 200px 0 200px;
+
+  .container {
+    .meat_title {
+      padding: 80px 175px 0 175px;
+
+      h2 {
+        @include h2_title
+      }
+
+      @include line;
+
+      p {
+        @include p_p;
+        text-align: center;
+      }
+    }
+
+    .meat_description {
+      display: flex;
+      justify-content: space-around;
+
+
+      div {
+        padding-top: 95px;
+
+        h5 {
+          @include p_p;
+          color: #0f5f5c;
+          font-weight: 700;
+          padding-bottom: 10px;
+          padding-top: 16px;
+        }
+
+        p {
+          @include p_p;
+        }
+      }
+    }
+  }
+}
+
+.last_section {
+  background: url("../../img/fone_about_us_last.jpg") center center no-repeat;
+  background-size: cover;
+  .section_last_description {
+    .section_title{
+      h2{
+        
+        color: #fff;
+      }
+      p{
+        padding-top: 10px;
+        color: #fff;
+      }
+    }
+    .btn_last_section input{
+      background: #49633a;
+    }
+  }
+}

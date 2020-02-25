@@ -1,0 +1,72 @@
+@import 'mixins';
+
+.description_responsive {
+  padding: 0 200px;
+  background-color: #eef1ec;
+
+  .container {
+    .responsive_title {
+      h2 {
+        @include h2_title;
+        padding-bottom: 21px;
+        padding-top: 73px;
+      }
+
+      @include line;
+
+      p {
+        @include p_p;
+        text-align: center;
+        padding-top: 12px;
+      }
+    }
+
+    .responsive_img {
+      display: flex;
+      padding-top: 21px;
+      position: relative;
+      align-items: center;
+
+      img {
+
+      }
+
+      .responsive_description {
+        padding-left: 5%;
+
+        h2 {
+          @include h2_title;
+          text-align: left;
+        }
+
+        p {
+          @include p_p;
+          text-align: left;
+
+          &:nth-child(2) {
+            padding: 20px 0 20px 0
+          }
+        }
+
+        .p_description {
+          padding-bottom: 20px;
+
+          &:before {
+            content: url("../img/ok.png");
+            top: 7px;
+            position: relative;
+          }
+
+          &:nth-child(3) {
+          }
+
+          &:nth-child(4) {
+
+            padding-bottom: 0;
+          }
+
+        }
+      }
+    }
+  }
+}

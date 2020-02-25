@@ -1,0 +1,143 @@
+.header .container img {
+  display: none;
+  height: 100px; }
+
+.header .container .top {
+  position: inherit;
+  background-color: #ffffff; }
+  .header .container .top .shadow {
+    display: none; }
+  .header .container .top .header_description {
+    display: none;
+    padding: 0; }
+  .header .container .top .top_bar {
+    position: relative;
+    height: 85px; }
+    .header .container .top .top_bar .top_section_first h1 {
+      color: #0f5f5c;
+      font-weight: 700;
+      font-size: 23px; }
+    .header .container .top .top_bar .top_section_first p {
+      color: #83a7a5;
+      border-left: 1px solid #83a7a5;
+      padding: 5px 0 5px 10px; }
+    .header .container .top .top_bar .top_section_second .navigation li:first-child a {
+      color: #83a7a5; }
+    .header .container .top .top_bar .top_section_second .navigation li:hover {
+      background: #6fb048;
+      border-radius: 2px; }
+    .header .container .top .top_bar .top_section_second .navigation li a {
+      color: #83a7a5; }
+    .header .container .top .top_bar .top_section_second .navigation li:hover a {
+      color: #ffff; }
+
+.form .container {
+  padding: 80px 250px 100px 250px; }
+  .form .container .contact_sheet .contact_title h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    color: #0f5f5c;
+    padding-bottom: 10px; }
+  .form .container .contact_sheet .contact_title .line_hr {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .form .container .contact_sheet .contact_title .line_hr hr {
+      background-color: #6fb048;
+      height: 1.5px;
+      width: 12px;
+      border: none;
+      margin-left: 1px;
+      margin-right: 1px; }
+    .form .container .contact_sheet .contact_title .line_hr hr:nth-child(2n) {
+      width: 17px; }
+  .form .container .contact_sheet .contact_title p {
+    padding: 10px 200px 70px 200px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #83a7a5;
+    line-height: 23px;
+    text-align: center; }
+  .form .container .contact_sheet .shipping_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .form .container .contact_sheet .shipping_form .form p {
+      padding-bottom: 20px; }
+      .form .container .contact_sheet .shipping_form .form p input.input_color {
+        background: #ffffff;
+        border: 1px solid #c1d3d2 !important;
+        width: 460px;
+        padding: 16px 0 16px 16px; }
+        .form .container .contact_sheet .shipping_form .form p input.input_color::-webkit-input-placeholder {
+          color: #83a7a5; }
+      .form .container .contact_sheet .shipping_form .form p textarea.input_color {
+        width: 470px;
+        max-height: 150px;
+        border: 1px solid #c1d3d2; }
+        .form .container .contact_sheet .shipping_form .form p textarea.input_color::-webkit-input-placeholder {
+          font-size: 17px;
+          padding: 16px 0 16px 16px;
+          color: #83a7a5; }
+      .form .container .contact_sheet .shipping_form .form p input[type="text"] {
+        border: 1px solid #c1d3d2; }
+    .form .container .contact_sheet .shipping_form .form button {
+      background: #6fb048;
+      height: 40px;
+      width: 180px;
+      border: none;
+      border-radius: 2px; }
+      .form .container .contact_sheet .shipping_form .form button:hover {
+        background: #4b7b35;
+        color: #ffffff; }
+    .form .container .contact_sheet .shipping_form .form_description {
+      border: 1.5px dotted #c1d3d2;
+      width: 325px;
+      height: 250px; }
+      .form .container .contact_sheet .shipping_form .form_description h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 30px;
+        color: #0f5f5c;
+        text-align: left;
+        font-size: 20px;
+        padding: 30px 0 15px 30px; }
+      .form .container .contact_sheet .shipping_form .form_description ul {
+        padding: 0 0 40px 30px; }
+        .form .container .contact_sheet .shipping_form .form_description ul li {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #83a7a5;
+          line-height: 23px;
+          padding-bottom: 5px; }
+          .form .container .contact_sheet .shipping_form .form_description ul li:nth-child(3) {
+            padding-left: 23px;
+            padding-bottom: 10px; }
+          .form .container .contact_sheet .shipping_form .form_description ul li:nth-child(2) {
+            padding-left: 23px; }
+          .form .container .contact_sheet .shipping_form .form_description ul li:nth-child(1)::before {
+            content: url("../../img/contact_img/Vector Smart1.png");
+            position: relative;
+            top: 5px;
+            padding-right: 8px; }
+          .form .container .contact_sheet .shipping_form .form_description ul li:nth-child(4)::before {
+            content: url("../../img/contact_img/Vector Smart2.png");
+            position: relative;
+            top: 4px;
+            padding-right: 8px; }
+          .form .container .contact_sheet .shipping_form .form_description ul li:nth-child(5)::before {
+            content: url("../../img/contact_img/Vector Smart3.png");
+            position: relative;
+            top: 1px;
+            padding-right: 8px; }

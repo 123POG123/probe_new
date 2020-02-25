@@ -1,0 +1,12 @@
+{% extends 'Wapic_start.html' %}
+{% load static %}
+{% block name %}
+<title>By</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/by/by.css' %}">
+{% endblock %}
+{% block content %}
+    {% include 'component_parts/header.html' %}
+    {% include 'component_parts/by.html' %}
+{% endblock %}

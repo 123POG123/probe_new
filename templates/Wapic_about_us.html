@@ -1,0 +1,81 @@
+{% extends 'Wapic_start.html' %}
+{% load static %}
+{% block name %}
+    <title>
+        About us
+    </title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/about_us/about_us1.css' %}">
+{% endblock %}
+{% block content %}
+    <header class="header">
+        <div class="container">
+            <img src="{% static 'img/Layer-2.jpg' %}" class="c_loser" alt="Layer">
+            <div class="top">
+                {% include 'component_parts/navbar.html' %}
+                <div class="header_description">
+                    <h1>
+                        Cras justo odio, dapibus ac facilisis in
+                        egestas eget quam
+                    </h1>
+                    <p>Wapik is multipurpose template, with modern and smart design. Wapik
+                        <br>
+                        is perfect template for you!</p>
+                    <input type="submit" placeholder="Learn More" value="Start Your Free Trial">
+                </div>
+                <div class="shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+    {% include 'component_parts/description.html' %}
+    <section class="section_team">
+        <div class="container">
+            <div class="meat_title">
+                <h2>
+                    Meet Our Team
+                </h2>
+                <div class="line_hr">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+                <p>
+                    Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                    eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus.
+                </p>
+            </div>
+            <div class="meat_description">
+                <div class="meat_description_img1">
+                    <img src="{% static 'img/img_piple1.jpg' %}" alt="">
+                    <h5>
+                        Joyce Hudson
+                    </h5>
+                    <p>
+                        Founder & Designer копия
+                    </p>
+                </div>
+                <div class="meat_description_img2">
+                    <img src="{% static 'img/img_piple2.jpg' %}" alt="">
+                    <h5>
+                        Angela Campbell
+                    </h5>
+                    <p>
+                        Project Manager
+                    </p>
+                </div>
+                <div class="meat_description_img3">
+                    <img src="{% static 'img/img_piple3.jpg' %}" alt="">
+                    <h5>
+                        James Walker
+                    </h5>
+                    <p>
+                        Developer
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

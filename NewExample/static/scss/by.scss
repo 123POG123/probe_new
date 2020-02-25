@@ -1,0 +1,155 @@
+.by {
+  .container {
+    background: #ffffff;
+    padding: 97px 200px 97px 200px;
+    text-align: center;
+
+    .by_title {
+      .closer {
+        display: none;
+      }
+
+      .ope_n {
+        display: block;
+      }
+
+      h2 {
+        @include h2_title;
+        padding-bottom: 30px;
+      }
+
+      @include line;
+
+      p {
+        @include p_p;
+        text-align: center;
+        padding-bottom: 38px;
+      }
+    }
+
+    .closer {
+      display: none;
+    }
+
+    .by_by {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+
+      div {
+        border: 1px solid #c1d3d2;
+        height: 360px;
+        width: 260px;
+        padding: 30px 25px;
+
+        &:nth-child(3) {
+          border-left: none;
+        }
+
+        &:nth-child(2) {
+          border-left: none;
+        }
+
+        h4 {
+          color: #6fb048;
+          text-transform: uppercase;
+          font-family: $Roboto;
+          font-weight: 500;
+          padding-bottom: 27px;
+        }
+
+        span {
+          color: #0f5f5c;
+          font-size: 70px;
+          font-weight: 700;
+          font-family: $Montserrat;
+        }
+
+        p {
+          color: #0f5f5c;
+          font-size: 13px;
+          padding-bottom: 25px;
+        }
+
+        ul {
+          @include p_p;
+          padding-bottom: 25px;
+        }
+
+        input {
+          border: none;
+          background: #83a7a5;
+          width: 140px;
+          height: 40px;
+          border-radius: 4px;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 13px;
+
+          &:hover {
+            background: #6fb048;
+
+          }
+        }
+      }
+    }
+
+    .by_description {
+      padding-top: 80px;
+      padding-bottom: 50px;
+
+      h2 {
+        @include h2_title;
+        padding-bottom: 10px;
+      }
+
+      @include line;
+
+      .ul_description {
+        padding-top: 25px;
+        @include p_p;
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+
+        li {
+
+          &:before {
+            position: relative;
+            top: 7px;
+            padding-right: 10px;
+            content: url("../img/ok.png");
+          }
+        }
+      }
+    }
+
+    .by_end {
+      img {
+
+      }
+
+      h2 {
+        font-size: 24px;
+        padding: 24px 0 17px 0;
+        font-family: $Roboto;
+        font-weight: 400;
+        color: #6fb048;
+      }
+
+      @include line;
+
+      p {
+        padding: 25px 250px 40px 250px;
+        @include p_p;
+      }
+
+      span {
+        color: $green;
+        font-family: $Roboto;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+}

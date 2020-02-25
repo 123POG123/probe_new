@@ -1,0 +1,93 @@
+.header .container .top .top_bar .top_section_second .navigation li a {
+  color: #bfcdcd !important; }
+
+.header .container .top .top_bar .top_section_second .navigation li:nth-child(2) a {
+  color: #ffffff !important; }
+
+.header .container .top .header_description {
+  text-align: center;
+  padding: 300px 300px 0 300px; }
+  .header .container .top .header_description h1 {
+    font-size: 45px;
+    color: #ffffff; }
+
+.description .container .description_title .ope_n {
+  display: none; }
+
+.description .container .description_title .closer {
+  display: block; }
+
+.description .container .line_description {
+  display: none; }
+
+.section_team {
+  background: #eef1ec;
+  height: 700px;
+  padding: 0 200px 0 200px; }
+  .section_team .container .meat_title {
+    padding: 80px 175px 0 175px; }
+    .section_team .container .meat_title h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      font-size: 30px;
+      color: #0f5f5c; }
+    .section_team .container .meat_title .line_hr {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .section_team .container .meat_title .line_hr hr {
+        background-color: #6fb048;
+        height: 1.5px;
+        width: 12px;
+        border: none;
+        margin-left: 1px;
+        margin-right: 1px; }
+      .section_team .container .meat_title .line_hr hr:nth-child(2n) {
+        width: 17px; }
+    .section_team .container .meat_title p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #83a7a5;
+      line-height: 23px;
+      text-align: center; }
+  .section_team .container .meat_description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .section_team .container .meat_description div {
+      padding-top: 95px; }
+      .section_team .container .meat_description div h5 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #83a7a5;
+        line-height: 23px;
+        color: #0f5f5c;
+        font-weight: 700;
+        padding-bottom: 10px;
+        padding-top: 16px; }
+      .section_team .container .meat_description div p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #83a7a5;
+        line-height: 23px; }
+
+.last_section {
+  background: url("../../img/fone_about_us_last.jpg") center center no-repeat;
+  background-size: cover; }
+  .last_section .section_last_description .section_title h2 {
+    color: #fff; }
+  .last_section .section_last_description .section_title p {
+    padding-top: 10px;
+    color: #fff; }
+  .last_section .section_last_description .btn_last_section input {
+    background: #49633a; }

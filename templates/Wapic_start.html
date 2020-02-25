@@ -1,0 +1,110 @@
+<!doctype html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/23b7fb484f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:300,400,700|Roboto:300,400,500,700&display=swap"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    {% block style %}
+    {% endblock %}
+    {% block name %}
+    {% endblock %}
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+<div class="last_section">
+    <div class="section_last_description">
+        <div class="section_title">
+            <h2>Do You Like Wapik? Download it Now</h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</p>
+        </div>
+        <div class="btn_last_section">
+            <input type="submit" value="download now! - FREE forever">
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="top_section">
+            <div class="wapic">
+                <ul>
+                    <li>wapik</li>
+                    <li>p: +62 202 555 0117</li>
+                    <li>a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</li>
+                </ul>
+            </div>
+            <div class="company">
+                <ul>
+                    <li>Company</li>
+                    <li>
+                        <a href="{% url 'wapic_start' %}">Home</a>
+                    <li>
+                    <li>
+                        <a href="{% url 'about_us' %}">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="others">
+                <ul>
+                    <li>Others</li>
+                    <li><a href="#">Help & Support</a>
+                    <li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="hewsletter">
+                <ul>
+                    <li>Newsletter</li>
+                    <li><a href="#">Subscribe to our newsletter and get all
+                        the cool news</a>
+                    </li>
+                </ul>
+                <form action="">
+                    <input type="email" placeholder="Enter Email">
+                    <button value="" type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    {#                    <input type="submit" value="">#}
+                </form>
+            </div>
+        </div>
+        <div class="lower_section">
+            <hr>
+            <div class="lower_section_last">
+                <div class="lower_section_left">
+                    <p>All rights reserved 2015.</p>
+                </div>
+                <div class="lower_section_right">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-github-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="{% static 'js/style-js.js' %}"></script>
+</body>
+</html>

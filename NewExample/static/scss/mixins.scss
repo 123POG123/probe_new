@@ -1,0 +1,37 @@
+@mixin line {
+  .line_hr {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+    hr {
+      background-color: #6fb048;
+      height: 1.5px;
+      width: 12px;
+      border: none;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    hr:nth-child(2n) {
+      width: 17px;
+
+    }
+  }
+}
+
+@mixin h2_title {
+  font-family: $Roboto;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  color: #0f5f5c;
+}
+
+@mixin p_p {
+  font-family: $Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #83a7a5;
+  line-height: 23px;
+}

@@ -1,0 +1,20 @@
+{% block content %}
+    {% load static %}
+    <header class="header">
+        <div class="container">
+            <img src="{% static 'img/Layer.jpg' %}" class="ope_n" alt="Layer">
+            <div class="top">
+                {% include 'component_parts/navbar.html' %}
+                <div class="header_description">
+                    <h1>Welcome to Wapik</h1>
+                    <p>Wapik is multipurpose template, with modern and smart design. Wapik
+                        <br>
+                        is perfect template for you!</p>
+                    <input type="submit" placeholder="Learn More" value="Learn More">
+                </div>
+                <div class="shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}

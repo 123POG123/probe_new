@@ -1,0 +1,369 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/23b7fb484f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:300,400,700|Roboto:300,400,500,700&display=swap"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Wapic</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+{#        <img src="{% static 'img/Layer.jpg' %}" alt="Layer">#}
+        <div class="top">
+            {% include 'component_parts/navbar.html' %}
+            <div class="header_description">
+                <h1>Welcome to Wapik</h1>
+                <p>Wapik is multipurpose template, with modern and smart design. Wapik
+                    <br>
+                    is perfect template for you!</p>
+                <input type="submit" placeholder="Learn More" value="Learn More">
+            </div>
+            <div class="shadow">
+            </div>
+        </div>
+    </div>
+</header>
+<section class="description">
+    <div class="container">
+        <div class="description_title">
+            <h1>Best of our features</h1>
+            <div class="line_hr">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        </div>
+        <div class="line_icons">
+            <div class="icons">
+                <img src="{% static 'img/img1/Vector-Smart-Object.jpg' %}" alt="Vector-Smart-Objec">
+                <h3>Ionicons</h3>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
+                    Pellentesque ornare sem.</p>
+            </div>
+            <div class="icons_first">
+                <img src="{% static 'img/img1/Vector-Smart-Object1.jpg' %}" alt="Vector-Smart-Objec">
+                <h3>Creative Design</h3>
+                <p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                    et.</p>
+            </div>
+            <div class="icons_second">
+                <img src="{% static 'img/img1/Vector-Smart-Object2.jpg' %}" alt="Vector-Smart-Objec">
+                <h3>Photoshop and Sketch</h3>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius
+                    blandit sit amet non magna.</p>
+            </div>
+        </div>
+        <div class="line_description">
+            <div class="line_description_first">
+                <h3>
+                    Cross Browser Compatibility
+                </h3>
+                <p>
+                    Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget
+                    metus.
+                </p>
+            </div>
+            <div class="line_description_second">
+                <h3>
+                    Creative Idea
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod
+                    semper.
+                </p>
+            </div>
+            <div class="line_description_three">
+                <h3>
+                    Pixel Perfect
+                </h3>
+                <p>
+                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="line_description_four">
+                <h3>
+                    Free Forever and Ever
+                </h3>
+                <p>
+                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at
+                    eget metus.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="description_responsive">
+    <div class="container">
+        <div class="responsive_title">
+            <h2>Looking for the perfect template to use?</h2>
+            <div class="line_hr">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <p>Donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+        <div class="responsive_img">
+            <img src="{% static 'img/hen.jpg' %}" alt="fone_shop">
+            <div class="responsive_description">
+                <h2>
+                    Responsive Ready
+                </h2>
+                <p>
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia
+                    bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                    Vestibulum id ligula porta felis euismod semper.
+                </p>
+                <p class="p_description">
+                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </p>
+                <p class="p_description">
+                    Donec id elit non mi porta gravida at eget metus.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="description_women">
+    <div class="container">
+        <div class="women_title">
+            <p>
+                This theme is beautiful, elegant and easy to customize. I’ve been able to build an amazing site in just
+                a minute. Thank you very much for creating this impressive template!
+            </p>
+            <p>Valeria Boltneva</p>
+            <p>Director of Acme.Inc</p>
+        </div>
+        <div class="women_img">
+            <img src="{% static 'img/women.jpg' %}" alt="lady">
+        </div>
+    </div>
+</div>
+<div class="world">
+    <div class="container">
+        <div class="world_description">
+            <h2>
+                Built with High Attention to Details
+            </h2>
+            <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+                amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum
+                nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id
+                ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus
+            </p>
+        </div>
+        <div class="world_img">
+            <img src="{% static 'img/world_d.jpg' %}" alt="world">
+        </div>
+    </div>
+</div>
+<section class="by">
+    <div class="container">
+        <div class="by_title">
+            <h2>
+                Pricing & Plan
+            </h2>
+            <div class="line_hr">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. <br>
+                Donec id elit non mi porta gravida at eget metus.
+            </p>
+        </div>
+        <div class="by_by">
+            <div class="basic">
+                <h4>
+                    Basic
+                </h4>
+                <span>
+                    $199
+                </span>
+                <p>/month</p>
+                <ul>
+                    <li> Justo Fringilla</li>
+                    <li>Mollis Sit Nullam</li>
+                    <li>Ultricies Purus Amet</li>
+                    <li>Cras Inceptos</li>
+                </ul>
+
+                <input type="submit" value="select plan">
+            </div>
+            <div class="plus">
+                <h4>
+                    plus
+                </h4>
+                <span>
+                    $399
+                </span>
+                <p>/month</p>
+                <ul>
+                    <li> Justo Fringilla</li>
+                    <li>Mollis Sit Nullam</li>
+                    <li>Ultricies Purus Amet</li>
+                    <li>Cras Inceptos</li>
+                </ul>
+                <input type="submit" value="select plan">
+            </div>
+            <div class="premium">
+                <h4>
+                    premium
+                </h4>
+                <span>
+                    $699
+                </span>
+                <p>/month</p>
+                <ul>
+                    <li> Justo Fringilla</li>
+                    <li>Mollis Sit Nullam</li>
+                    <li>Ultricies Purus Amet</li>
+                    <li>Cras Inceptos</li>
+                </ul>
+                <input type="submit" value="select plan">
+            </div>
+        </div>
+        <div class="by_description">
+            <h2>
+                Included with all Plans
+            </h2>
+            <div class="line_hr">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <div class="ul_description">
+                <ul class="categoris">
+                    <li>Maecenas faucibus mollis interdum</li>
+                    <li>Cras justo odio, dapibus ac facilisis</li>
+                    <li>Fringilla Mattis</li>
+
+                </ul>
+                <ul class="categoris">
+
+                    <li>Vestibulum id ligula porta felis euismod</li>
+                    <li>Duis mollis, est non commodo luctus</li>
+                    <li>Integer posuere</li>
+
+                </ul>
+                <ul class="categoris">
+
+                    <li>Nulla vitae elit libero, a pharetra augue</li>
+                    <li>Curabitur blandit tempus porttitor</li>
+                    <li>Nullam quis risus eget urna mollis</li>
+                </ul>
+            </div>
+        </div>
+        <div class="by_end">
+            <img src="{% static 'img/boll.jpg' %}" alt="">
+            <h2>Need Help?</h2>
+            <div class="line_hr">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <p>
+                Contact our Customer Support that is always ready to help you with any possible
+                questions, problems or information.
+            </p>
+            <span>
+                support@wapik.com
+            </span>
+        </div>
+    </div>
+</section>
+<div class="last_section">
+    {#    <img src="{% static 'img/img_bottom.jpg' %}" alt="">#}
+    <div class="section_last_description">
+        <div class="section_title">
+            <h2>Do You Like Wapik? Download it Now</h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</p>
+        </div>
+        <div class="btn_last_section">
+            <input type="submit" value="download now! - FREE forever">
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="top_section">
+            <div class="wapic">
+                <ul>
+                    <li>wapik</li>
+                    <li>p: +62 202 555 0117</li>
+                    <li>a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</li>
+                </ul>
+
+            </div>
+            <div class="company">
+                <ul>
+                    <li>Company</li>
+                    <li><a href="#"><a href="#">Home</a></a>
+                    <li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="others">
+                <ul>
+                    <li>Others</li>
+                    <li><a href="#">Help & Support</a>
+                    <li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="hewsletter">
+                <ul>
+                    <li>Newsletter</li>
+                    <li><a href="#">Subscribe to our newsletter and get all
+                        the cool news</a>
+                    </li>
+                </ul>
+                <form action="">
+                    <input type="email" placeholder="Enter Email">
+                    <button value="" type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    {#                    <input type="submit" value="">#}
+                </form>
+            </div>
+        </div>
+        <div class="lower_section">
+            <hr>
+            <div class="lower_section_last">
+                <div class="lower_section_left">
+                    <p>All rights reserved 2015.</p>
+                </div>
+                <div class="lower_section_right">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-github-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="{% static 'js/style-js.js' %}"></script>
+</body>
+</html>

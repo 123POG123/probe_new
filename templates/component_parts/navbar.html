@@ -1,0 +1,28 @@
+{% block bar %}
+    <div class="top_bar">
+        <div class="top_section_first">
+            <h1>WAPIK</h1>
+            <p>+62 202 555 0117</p>
+        </div>
+        <div class="top_section_second">
+            <ul class="navigation">
+                <li>
+                    <a href="{% url 'wapic_start' %}" class="button_fixed" id="button1">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'about_us' %}" class="button_fixed" id="button2">About Us</a>
+                </li>
+                <li>
+                    <a href="{% url 'wapic_start' %}" class="button_fixed" id="button3">pricing</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}" class="button_fixed" id="button4">Contact Us</a>
+                </li>
+                <li>
+                    <a href="{% url 'by' %}" class="button_fixed" id="button5">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr class="closer">
+{% endblock %}

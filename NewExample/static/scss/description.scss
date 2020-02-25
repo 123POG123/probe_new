@@ -1,0 +1,132 @@
+@import 'mixins.scss';
+
+.description {
+  padding: 90px 200px 90px 200px;
+  text-align: center;
+
+  .container {
+    background: #ffffff;
+
+    .description_title {
+      .closer{
+        display: none;
+      }
+      .ope_n{
+        display: block;
+
+      }
+      h1 {
+        @include h2_title;
+        padding-bottom: 21px;
+      }
+
+
+      @include line;
+
+
+      p {
+        @include p_p;
+      }
+    }
+
+    .line_icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+        width: 30%;
+
+        img {
+
+          padding-top: 60px;
+          height: 56px;
+        }
+
+        h3 {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          color: #044c5f;
+          font-size: 14px;
+          font-family: $Roboto;
+          font-weight: 600;
+        }
+
+        p {
+          @include p_p;
+        }
+      }
+    }
+
+    .line_description {
+      padding-top: 140px;
+
+      div {
+
+        display: inline-block;
+        width: 49%;
+        text-align: left;
+        padding: 30px 0 30px 0;
+
+        h3 {
+          padding-bottom: 30px;
+          color: #044c5f;
+          font-size: 14px;
+          font-family: $Roboto;
+          font-weight: 600;
+
+        }
+
+        p {
+          line-height: 18px;
+          @include p_p;
+        }
+      }
+
+      .line_description_first {
+        h3 {
+
+          &:before {
+            position: relative;
+            top: 10px;
+            padding-right: 10px;
+            content: url('../img/Vector-Smart-Object_1.jpg');
+          }
+        }
+      }
+
+      .line_description_second {
+        h3 {
+          &:before {
+            position: relative;
+            top: 10px;
+            padding-right: 10px;
+            content: url('../img/Vector-Smart-Object_2.jpg');
+          }
+        }
+      }
+
+      .line_description_three {
+        h3 {
+          &:before {
+            position: relative;
+            top: 10px;
+            padding-right: 10px;
+            content: url('../img/Vector-Smart-Object_3.jpg');
+          }
+        }
+      }
+
+      .line_description_four {
+        h3 {
+          &:before {
+            position: relative;
+            top: 10px;
+            padding-right: 10px;
+            content: url('../img/Vector-Smart-Object_4.jpg');
+          }
+        }
+      }
+    }
+  }
+}
